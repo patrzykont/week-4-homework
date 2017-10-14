@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars RPG</title>
+
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+
+      <h1 class="text-center"><strong>Star Wars Battle!!!</strong></h1>
+      <h2 class="text-center">Select Your Jedi Knight Or Sith Lord</h2>
+
+    </div> 
+
+
+    <div class="row">
+
+
+      <div class="col-lg-12" id="characters-available">
+        <span class="character-image available-character" id="obi-wan-kenobi-character">
+          <p>Obi-Wan Kenobi</p>
+          <img src="./assets/images/obi-wan-kenobi.jpg" alt="Obi-Wan Kenobi Character" id="obi-wan-kenobi-image" class="images">
+          <p class="health">120</p>
+        </span>
+
+        <span class="character-image available-character" id="luke-skywalker-character">
+          <p>Luke Skywalker</p>
+          <img src="./assets/images/luke-skywalker.jpg" alt="Luke Skywalker Character" id="luke-skywalker-image" class="images" >
+          <p class="health">100</p>
+        </span>
+        
+        <span class="character-image available-character" id="jarjar-character">
+          <p>Jar Jar Binks</p>
+          <img src="./assets/images/jj.jpg" alt="Jar Jar Character" id="jar-jar-image" class="images">
+          <p class="health">180</p>
+        </span>
+     
+        <span class="character-image available-character" id="darth-sidious-character">
+          <p>Darth Sidious</p>
+          <img src="./assets/images/darth-sidious.jpg" alt="Darth Sidious Character" id="darth-sidious-image" class="images">
+          <p class="health">150</p>
+        </span>
+
+        </div> 
+
+      
+      <div class="col-lg-12" id="chosen-character">
+        <h2>Your Character</h2>
+      </div> 
+     
+
+      <div class="col-lg-12" id="enemies-available">
+        <h2>Enemies Available To Attack</h2>
+      </div> 
+
+      
+      <div class="col-lg-12" id="fight-section">
+        <h2>Fight Section</h2>
+        <button id="attack">Attack</button>
+      </div> 
+
+      
+      <div class="col-lg-12" id="defender-section">
+        <h2>Defender</h2>
+      </div> 
+
+     
+      <div class="col-lg-12" id="message-section">
+        <div id="game-message"></div>
+        <button id="restart">Restart</button>
+      </div> 
+
+    </div> 
+
+  </div> 
+
+  <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+</body>
+</html>
